@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Discussions
+    url: https://github.com/gshepptech/bits-and-mortar/discussions
+    about: Questions, ideas, and show-and-tell — start here if it isn't a bug or a concrete feature request.
+  - name: 📚 Claude Code plugin docs
+    url: https://docs.claude.com/en/docs/claude-code
+    about: How plugins, marketplaces, hooks, and MCP servers work in Claude Code.
+  - name: 🔒 Report a security issue
+    url: https://github.com/gshepptech/bits-and-mortar/security/advisories/new
+    about: Please report vulnerabilities privately, not as a public issue.

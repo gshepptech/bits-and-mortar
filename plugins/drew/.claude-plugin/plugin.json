@@ -1,0 +1,8 @@
+{
+  "name": "drew",
+  "description": "Codebase-aware specification engine for Claude Code. Runs parallel codebase research, then a grounded interview that captures implicit facts as A-AUTO-NNN entries, emits typed Global Invariants / State Transitions / Contracts tables, runs an adversarial spec review at R3.5, then writes a Mason-ready spec with version frontmatter (v2.1) — locked, classified, citation-backed. Detects brownfield, greenfield, and cosmetic modes; brownfield runs produce a flow delta against the existing system. Drew plans. Mason builds.",
+  "version": "5.0.0",
+  "author": {
+    "name": "gshepptech"
+  }
+}

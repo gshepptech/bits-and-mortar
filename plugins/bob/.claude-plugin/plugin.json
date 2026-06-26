@@ -1,0 +1,8 @@
+{
+  "name": "bob",
+  "description": "Bob keeps every job plumb, level, and true — measure twice, cut once. He stops Claude from racing on ad-hoc work. Methodical-mode pre-response checklist injected every turn (Restate, Verified/Unverified assumptions, Read Floor, Approach Deliberation, Blast Radius, Stall Check, Competing Hypotheses, Goal-Driven Execution, See It Through, Observation Grounding). Stop hook enforces five gates: file:line citation verifier, uncertainty-tell scanner, Fable-mode completion gate (blocks responses that end by promising first-person work without doing it), zero-tool-call grounding audit, and an iterative two-tier critic-dialog (Haiku fast-critic rounds 1-3, opus pre-stop-critic rounds 4-6, HARD block at round 6 until /bob:trust-me bypass). Each critic runs a 10-item rule compliance audit and sees the prior round's feedback to verify Claude actually addressed flagged issues. /bob:casual (one turn skip), /bob:trust-me (one-turn strict bypass), /bob:fable-off (disable completion gate), /bob:off (session disable). /bob:deep for heavier analysis, /bob:second-opinion for independent critique.",
+  "version": "0.5.0",
+  "author": {
+    "name": "gshepptech"
+  }
+}

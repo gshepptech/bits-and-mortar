@@ -1,0 +1,8 @@
+{
+  "name": "gus",
+  "description": "Hand Gus a gnarly problem and he owns the outcome end to end. Gus is the general contractor: he runs a crew of five Opus sub-agents (dispatcher, recon, builder, auditor, fresh-eyes) to investigate, plan, execute, and verify — SSH into systems, spin up infra, edit code, ship features, debug deploys, get airgap bundles working. The builder self-switches between investigating, planning, executing, and verifying modes. Bounded recon budget, multi-angle retry on stuck (N=2-3 parallel variants + arbiter), and the auditor and fresh-eyes must each produce evidence ledgers of commands they actually ran. One checkpoint (plan approval) for side-effecting tasks, zero for pure investigation. Plan and debrief render in chat; state files live in .gus/runs/ for resume. /gus:goal runs the builder→auditor→fresh-eyes loop unattended until auditor and fresh-eyes both return pass — enforced by a Stop hook, bounded by cycle and time caps.",
+  "version": "0.2.0",
+  "author": {
+    "name": "gshepptech"
+  }
+}

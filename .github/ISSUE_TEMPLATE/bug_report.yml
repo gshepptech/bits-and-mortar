@@ -1,0 +1,68 @@
+name: 🐛 Bug report
+description: Something in a plugin isn't behaving as it should
+title: "[bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for filing a report. The more concrete the repro, the faster the fix.
+  - type: dropdown
+    id: plugin
+    attributes:
+      label: Which crew member?
+      description: The plugin this bug is about.
+      options:
+        - drew
+        - mason
+        - bob
+        - gus
+        - dusty
+        - tess
+        - riggs
+        - marlowe
+        - marketplace / install
+        - not sure
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you do, and what went wrong?
+      placeholder: I ran `/drew:plan ...` and ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      description: A minimal sequence someone else can follow.
+      placeholder: |
+        1. Install the plugin
+        2. Run ...
+        3. See ...
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Plugin / Claude Code version
+      placeholder: "e.g. mason v4.4.0, Claude Code 1.x"
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant output or logs
+      render: shell
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues and this isn't a duplicate
+          required: true

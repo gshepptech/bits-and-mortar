@@ -1,0 +1,39 @@
+---
+description: "Show current Mason run status"
+allowed-tools: ["Bash(ls:*)", "Bash(cat:*)", "Bash(jq:*)", "Read", "Glob"]
+hide-from-slash-command-tool: "true"
+---
+
+# Mason Status Command
+
+Show the current state of Mason runs.
+
+## STEP 1: CHECK FOR ACTIVE RUN
+
+Call `Mill-Context` to check for an active run in this session.
+
+If active, display:
+- Run name, phase, cycle
+- Open defects count
+- Verification stream status
+- Team status
+
+## STEP 2: LIST ALL RUNS
+
+```bash
+ls -d mill-archive/*/ 2>/dev/null || echo "NO_RUNS"
+```
+
+For each run, read `state.json` and display a summary table:
+
+| Run | Phase | Cycle | Defects | Started |
+|-----|-------|-------|---------|---------|
+| bold-falcon | INSPECT | 2 | 3 open | 2026-03-20 |
+| swift-anvil | DONE | 0 | 0 | 2026-03-22 |
+
+## STEP 3: DETAILED VIEW (if user asks)
+
+Read and display:
+- `blueprint-log.md` — execution history
+- `defects.json` — open/fixed defects
+- `verdicts.json` — requirement verdicts

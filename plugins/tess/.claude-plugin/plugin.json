@@ -1,0 +1,8 @@
+{
+  "name": "tess",
+  "description": "Tess is the inspector who tests every room — end-to-end test authoring and maintenance for web apps via Playwright + Playwright MCP. She drives a real browser, reads the accessibility tree, and emits *.spec.ts files that pass — then keeps them passing. /tess:init scaffolds Playwright in the cwd and registers the MCP server. /tess:write <flow> drives the browser to perform the flow and emits a green spec. /tess:crawl discovers every route and generates a smoke spec per route. /tess:matrix produces a routes × roles coverage suite with reused storageState. /tess:audit runs the suite, reads trace.zip files, and triages failures by root cause. /tess:record wraps playwright codegen for manual capture. The author skill enforces selector hygiene (getByRole over CSS), auto-wait discipline, and idempotent test design; the diagnose skill drives trace-driven flaky-test triage. The spec-writer subagent isolates MCP-driven spec authoring from the main context.",
+  "version": "0.2.0",
+  "author": {
+    "name": "gshepptech"
+  }
+}

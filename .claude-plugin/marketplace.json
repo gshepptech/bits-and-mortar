@@ -1,0 +1,90 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "bits-and-mortar",
+  "description": "Bits & Mortar — a crew of AI builders for Claude Code. Drew draws it. Mason builds it.",
+  "owner": {
+    "name": "gshepptech"
+  },
+  "plugins": [
+    {
+      "name": "drew",
+      "source": "./plugins/drew",
+      "description": "Codebase-aware specification engine for Claude Code. Runs parallel codebase research, then a grounded interview that captures implicit facts as A-AUTO-NNN entries, emits typed Global Invariants / State Transitions / Contracts tables, runs an adversarial spec review at R3.5, then writes a Mason-ready spec with version frontmatter (v2.1) — locked, classified, citation-backed. Detects brownfield, greenfield, and cosmetic modes; brownfield runs produce a flow delta against the existing system. Drew plans. Mason builds.",
+      "version": "5.0.0",
+      "category": "development",
+      "author": {
+        "name": "gshepptech"
+      }
+    },
+    {
+      "name": "mason",
+      "source": "./plugins/mason",
+      "description": "Mason is the builder on the Bits & Mortar crew — an autonomous build-verify-fix loop for Claude Code. Mason reads Drew's spec, decomposes it into castings with pre-authored teammate prompts, validates through an 11-dimension M0.9 gate (including M0.7 intent-carrier coverage), builds in parallel waves with server-side evidence re-execution and per-requirement-ID binding, runs up to 8 verification streams (TRACE, FLOW_TRACE, PROVE, RESEARCH_AUDIT, COVERAGE_DIFF, SIGHT, TEST/PROBE, TEST_OBSERVATIONS), grinds defects to zero, then assays with fresh eyes. Brownfield runs consume a flow delta; greenfield and cosmetic runs use the end-state pipeline. Drew draws it. Mason builds it.",
+      "version": "4.4.0",
+      "category": "development",
+      "author": {
+        "name": "gshepptech"
+      }
+    },
+    {
+      "name": "bob",
+      "source": "./plugins/bob",
+      "description": "Bob keeps every job plumb, level, and true — measure twice, cut once. He stops Claude from racing on ad-hoc work. Methodical-mode pre-response checklist injected every turn (Restate, Verified/Unverified assumptions, Read Floor, Approach Deliberation, Blast Radius, Stall Check, Competing Hypotheses, Goal-Driven Execution, See It Through, Observation Grounding). Stop hook enforces five gates: file:line citation verifier, uncertainty-tell scanner, Fable-mode completion gate (blocks responses that end by promising first-person work without doing it), zero-tool-call grounding audit, and an iterative two-tier critic-dialog (Haiku fast-critic rounds 1-3, opus pre-stop-critic rounds 4-6, HARD block at round 6 until /bob:trust-me bypass). Each critic runs a 10-item rule compliance audit and sees the prior round's feedback to verify Claude actually addressed flagged issues. /bob:casual (one turn skip), /bob:trust-me (one-turn strict bypass), /bob:fable-off (disable completion gate), /bob:off (session disable). /bob:deep for heavier analysis, /bob:second-opinion for independent critique.",
+      "version": "0.5.0",
+      "category": "productivity",
+      "author": {
+        "name": "gshepptech"
+      }
+    },
+    {
+      "name": "gus",
+      "source": "./plugins/gus",
+      "description": "Hand Gus a gnarly problem and he owns the outcome end to end. Gus is the general contractor: he runs a crew of five Opus sub-agents (dispatcher, recon, builder, auditor, fresh-eyes) to investigate, plan, execute, and verify — SSH into systems, spin up infra, edit code, ship features, debug deploys, get airgap bundles working. The builder self-switches between investigating, planning, executing, and verifying modes. Bounded recon budget, multi-angle retry on stuck (N=2-3 parallel variants + arbiter), and the auditor and fresh-eyes must each produce evidence ledgers of commands they actually ran. One checkpoint (plan approval) for side-effecting tasks, zero for pure investigation. Plan and debrief render in chat; state files live in .gus/runs/ for resume. /gus:goal runs the builder→auditor→fresh-eyes loop unattended until auditor and fresh-eyes both return pass — enforced by a Stop hook, bounded by cycle and time caps.",
+      "version": "0.2.0",
+      "category": "productivity",
+      "author": {
+        "name": "gshepptech"
+      }
+    },
+    {
+      "name": "dusty",
+      "source": "./plugins/dusty",
+      "description": "Dusty is the crew member who sweeps the site clean — careful, low-risk codebase cleanup across 7 focused tracks: deduplication, type consolidation, dead code removal, circular dependency untangling, type strengthening, error-handling cleanup, and deprecated/AI-slop removal. On each track Dusty inspects, writes a critical assessment, ranks proposed changes by confidence, and auto-applies ONLY HIGH-confidence LOW-risk changes per batch — running language-appropriate type checks, tests, and lints after each batch. MEDIUM and LOW confidence changes get surfaced for explicit human approval. Atomic commits per batch so any failing check is one git revert away. Dusty works the conservative cleanup pass — never merging code that just LOOKS similar, never removing dynamically-imported code, never breaking legitimate boundary types, never silencing real errors. Refuses to use comments as a source of truth.",
+      "version": "0.1.0",
+      "category": "productivity",
+      "author": {
+        "name": "gshepptech"
+      }
+    },
+    {
+      "name": "tess",
+      "source": "./plugins/tess",
+      "description": "Tess is the inspector who tests every room — end-to-end test authoring and maintenance for web apps via Playwright + Playwright MCP. She drives a real browser, reads the accessibility tree, and emits *.spec.ts files that pass — then keeps them passing. /tess:init scaffolds Playwright in the cwd and registers the MCP server. /tess:write <flow> drives the browser to perform the flow and emits a green spec. /tess:crawl discovers every route and generates a smoke spec per route. /tess:matrix produces a routes × roles coverage suite with reused storageState. /tess:audit runs the suite, reads trace.zip files, and triages failures by root cause. /tess:record wraps playwright codegen for manual capture. The author skill enforces selector hygiene (getByRole over CSS), auto-wait discipline, and idempotent test design; the diagnose skill drives trace-driven flaky-test triage. The spec-writer subagent isolates MCP-driven spec authoring from the main context.",
+      "version": "0.2.0",
+      "category": "productivity",
+      "author": {
+        "name": "gshepptech"
+      }
+    },
+    {
+      "name": "riggs",
+      "source": "./plugins/riggs",
+      "description": "Generate really good dynamic Workflow scripts on demand. /riggs:make <task> classifies the task into an orchestration archetype (understand / design / review / research / migrate / generic), picks the right fan-out topology (pipeline by default, barrier only when a stage genuinely needs all prior results), and authors a self-contained Workflow script that obeys the Workflow tool's hard rules — pure-literal meta block, schema'd agent returns instead of text parsing, .filter(Boolean) after fan-out, adversarial-verify for findings, loop-until-dry / loop-until-budget for unknown-size work, isolation:'worktree' only for parallel file mutation, no Date.now/Math.random. Every script is validated with `node --check` and a 14-point self-audit before it is saved to .claude/workflows/ or run. Riggs rigs up the orchestration so you don't freehand it.",
+      "version": "0.2.0",
+      "category": "productivity",
+      "author": {
+        "name": "gshepptech"
+      }
+    },
+    {
+      "name": "marlowe",
+      "source": "./plugins/marlowe",
+      "description": "Macro-architecture / design-cohesion review — the senior-engineer 'is this shaped right or accreted?' critique, not bug-hunting or lint. Marlowe reads a codebase the way a gumshoe reads a crime scene: deduces the real design problem from the detail that's out of place. /marlowe:review <target> runs a Workflow engine that builds a grounded structural map of the target (a path, the diff, a subsystem, or a described piece of logic), then runs 8 blind design lenses — package/module proliferation, missed sharing & reuse, helper sprawl & abstraction fit, flow & layering, cohesion, naming/structural consistency, accretion markers, boundary & dependency direction — each a separate agent hunting one class of design problem. Every candidate finding is adversarially cross-examined by a skeptic that tries to refute it as intentional, so plausible-but-wrong smells get dropped; a completeness critic then re-lenses any in-scope area no finding touched. The result is synthesized into a per-subsystem deliberate/mixed/accreted verdict with file:line evidence and an ordered, concrete reshaping plan. Report only — never edits code. Forbidden from style nits, correctness bugs, or treating comments as source of truth ('the code is the only witness that doesn't lie'); an empty result is a valid honest outcome for a well-shaped target.",
+      "version": "0.1.0",
+      "category": "productivity",
+      "author": {
+        "name": "gshepptech"
+      }
+    }
+  ]
+}

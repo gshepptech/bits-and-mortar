@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.DS_Store
+.claude/settings.local.json
+.idea/
+.vscode/
+*.swp
+.planning/
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
