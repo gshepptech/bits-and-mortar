@@ -84,6 +84,29 @@ Then, from inside your project:
 
 **Drew draws it. Mason builds it.** The rest of the crew covers the work around the edges.
 
+<div align="center">
+
+<table>
+<tr>
+<td width="50%"><a href="plugins/drew/README.md"><img src="plugins/drew/drew.svg" alt="Drew — the draftsman" width="100%"/></a></td>
+<td width="50%"><a href="plugins/mason/README.md"><img src="plugins/mason/mason.svg" alt="Mason — the builder" width="100%"/></a></td>
+</tr>
+<tr>
+<td width="50%"><a href="plugins/bob/README.md"><img src="plugins/bob/bob.svg" alt="Bob — keeps it plumb" width="100%"/></a></td>
+<td width="50%"><a href="plugins/gus/README.md"><img src="plugins/gus/gus.svg" alt="Gus — the general contractor" width="100%"/></a></td>
+</tr>
+<tr>
+<td width="50%"><a href="plugins/dusty/README.md"><img src="plugins/dusty/dusty.svg" alt="Dusty — the sweep" width="100%"/></a></td>
+<td width="50%"><a href="plugins/tess/README.md"><img src="plugins/tess/tess.svg" alt="Tess — the inspector" width="100%"/></a></td>
+</tr>
+<tr>
+<td width="50%"><a href="plugins/riggs/README.md"><img src="plugins/riggs/riggs.svg" alt="Riggs — the rigger" width="100%"/></a></td>
+<td width="50%"><a href="plugins/marlowe/README.md"><img src="plugins/marlowe/marlowe.svg" alt="Marlowe — the surveyor" width="100%"/></a></td>
+</tr>
+</table>
+
+</div>
+
 <details>
 <summary><b>📋 Meet each tradesperson (click to expand the full job description)</b></summary>
 
