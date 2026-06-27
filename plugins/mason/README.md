@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="mason.svg" alt="Mason — the builder" width="100%"/>
+
 # Mason
 
 **The builder on the Bits & Mortar crew — an autonomous build-verify-fix loop for Claude Code.**

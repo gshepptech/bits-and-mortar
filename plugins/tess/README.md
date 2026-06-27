@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="tess.svg" alt="Tess — the inspector" width="100%"/>
+
 # Tess
 
 **Describe the flow. Tess walks every room. The spec writes itself.**

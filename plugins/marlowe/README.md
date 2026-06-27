@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="marlowe.svg" alt="Marlowe — the surveyor" width="100%"/>
+
 # Marlowe
 
 **Macro-architecture review — is this shaped right, or accreted?**

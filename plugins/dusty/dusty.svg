@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="200" viewBox="0 0 720 200" role="img" aria-label="Dusty — the sweep, part of the Bits &amp; Mortar crew">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#00897B"/>
+      <stop offset="1" stop-color="#00514A"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.12" cy="0.1" r="0.9">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.20"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="720" height="200" rx="20" fill="url(#bg)"/>
+  <rect width="720" height="200" rx="20" fill="url(#glow)"/>
+
+  <rect x="46" y="62" width="76" height="76" rx="18" fill="#ffffff" opacity="0.14"/>
+  <g transform="translate(56,72)"><line x1="14" y1="6" x2="33" y2="31" stroke="#fff" stroke-width="4" stroke-linecap="round"/><path d="M27 29 L46 41 L40 50 L21 38 Z" fill="#fff"/><line x1="25" y1="44" x2="23" y2="54" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/><line x1="31" y1="47" x2="30" y2="57" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/><line x1="37" y1="50" x2="37" y2="59" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/></g>
+
+  <text x="160" y="92" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="46" font-weight="800" fill="#ffffff" letter-spacing="-1">Dusty</text>
+  <text x="162" y="123" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="19" font-weight="500" fill="#ffffff" opacity="0.96">the sweep</text>
+  <rect x="162" y="141" width="220" height="27" rx="13.5" fill="#ffffff" opacity="0.16"/>
+  <text x="177" y="159" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12.5" fill="#ffffff" opacity="0.95">low-risk cleanup · v0.1.0</text>
+  <text x="690" y="180" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" fill="#ffffff" opacity="0.5" letter-spacing="1.5">BITS &amp; MORTAR</text>
+</svg>

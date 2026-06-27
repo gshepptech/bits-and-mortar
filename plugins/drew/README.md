@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="drew.svg" alt="Drew — the draftsman" width="100%"/>
+
 # Drew
 
 **The codebase-aware specification engine for Claude Code.**

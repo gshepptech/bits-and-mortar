@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="riggs.svg" alt="Riggs — the rigger" width="100%"/>
+
 # Riggs
 
 **You name the task. Riggs picks the topology, rigs up the script, and validates it.**

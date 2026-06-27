@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="gus.svg" alt="Gus — the general contractor" width="100%"/>
+
 # Gus
 
 **Hand Gus a gnarly problem — he owns the outcome end to end.**

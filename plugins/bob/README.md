@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="bob.png" alt="Bob — the crew member who keeps every job plumb, level, and true" width="220"/>
+<img src="bob.svg" alt="Bob — keeps every job plumb, level, and true" width="100%"/>
 
 # Bob
 

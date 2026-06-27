@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="dusty.svg" alt="Dusty — the sweep" width="100%"/>
+
 # Dusty
 
 **The crew member who sweeps the site clean — careful, low-risk codebase cleanup across 7 focused tracks.**

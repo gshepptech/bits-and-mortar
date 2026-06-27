@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="200" viewBox="0 0 720 200" role="img" aria-label="Tess — the inspector, part of the Bits &amp; Mortar crew">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E53935"/>
+      <stop offset="1" stop-color="#B71C1C"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.12" cy="0.1" r="0.9">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.20"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="720" height="200" rx="20" fill="url(#bg)"/>
+  <rect width="720" height="200" rx="20" fill="url(#glow)"/>
+
+  <rect x="46" y="62" width="76" height="76" rx="18" fill="#ffffff" opacity="0.14"/>
+  <g transform="translate(56,72)"><circle cx="24" cy="24" r="14" fill="none" stroke="#fff" stroke-width="4"/><line x1="34" y1="34" x2="50" y2="50" stroke="#fff" stroke-width="6" stroke-linecap="round"/></g>
+
+  <text x="160" y="92" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="46" font-weight="800" fill="#ffffff" letter-spacing="-1">Tess</text>
+  <text x="162" y="123" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="19" font-weight="500" fill="#ffffff" opacity="0.96">the inspector</text>
+  <rect x="162" y="141" width="220" height="27" rx="13.5" fill="#ffffff" opacity="0.16"/>
+  <text x="177" y="159" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12.5" fill="#ffffff" opacity="0.95">Playwright e2e · v0.2.0</text>
+  <text x="690" y="180" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" fill="#ffffff" opacity="0.5" letter-spacing="1.5">BITS &amp; MORTAR</text>
+</svg>
